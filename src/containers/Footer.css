@@ -1,0 +1,55 @@
+.footer {
+    background-color: #ffffff;
+    color: #707070;
+    padding: 1em 8%;
+}
+
+.footer {
+    grid-column: 1 / 13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+
+.footer ul{
+    display: flex;
+}
+
+.footer ul li {
+    white-space: nowrap;
+    margin: 1em;
+    font-size: 0.85em;
+}
+
+.footer li a {
+    color: #707070;
+}
+
+.footer li a:hover {
+    color: #2D3540;
+}
+
+copy, address {
+    white-space: nowrap;
+    font-size: 0.85em;
+    margin: 0.25em 0;
+}
+
+
+
+
+/* Call center number */
+.footer .call-center {
+  grid-column: 10 /13;
+  justify-self: end;
+  text-align: end;
+}
+.call-center b {
+  font-size: 4.5em;
+  font-weight: 900;
+}
+
+.call-center small {
+  font-size: 0.85em;
+  display: block;
+}
