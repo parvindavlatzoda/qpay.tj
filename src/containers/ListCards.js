@@ -21,7 +21,7 @@ export default class ListCards extends React.Component {
             image={tcellLogo}
             information={infoTcell}
           />
-          <InfoCard category="cellular" title="BEELINE" image={beelineLogo} />
+          <InfoCard category="cellular" title="Beeline" image={beelineLogo} />
           <InfoCard
             category="cellular"
             title="BABILON-M"
