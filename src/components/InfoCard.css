@@ -38,29 +38,18 @@
   border: 0.01em solid #336dc4;
 }
 
-.info-card h4 {
-  font-size: 1.6rem;
-  /* font-weight: 500; */
-  color: #666;
-  /* bottom: 1em; */
-  /* margin-top: 5em; */
-  color: #262626;
-  font-weight: 400;
-  line-height: 1.1;
-  margin-bottom: 12px;
-}
 .info-card h3 {
   font-size: initial;
-
   margin-right: auto;
   position: relative;
-  font-size: 0.8666666667rem;
+  font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   text-align: left;
-  padding-left: 2em;
+  padding-left: 1em;
   color: #652d91;
+  line-height: 1.1;
 }
 .info-text {
   font-family: mwf-segoeui-web, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -69,19 +58,4 @@
   margin: 1.6rem;
   max-height: 145px;
   line-height: 1.5;
-}
-
-.info-card .cellular h3 {
-  font-size: 1em;
-  font-weight: 500;
-  /* color: #666; */
-  bottom: 1em;
-  margin-top: 2em;
-}
-
-.service-icon {
-  fill: #666;
-  position: absolute;
-  top: 0.9em;
-  left: 26%;
 }
