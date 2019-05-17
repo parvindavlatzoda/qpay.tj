@@ -1,46 +1,46 @@
 /* Card's greed */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  grid-gap: 1em;;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  grid-gap: 1em;
 }
 
 .home-grid .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  grid-gap: 0.5em;;
+  grid-gap: 0.5em;
 }
-
-
 
 /* Card */
 .card {
   transition: box-shadow 300ms ease, transform 300ms ease;
   background-color: #fff;
 
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.14);
+  border-radius: 16px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.14);
   cursor: pointer;
   text-align: center;
-  height: 12em;
+  height: 7em;
+  width: 7em;
   user-select: none;
   position: relative;
 }
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 18px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.1);
 }
 
 .card h3 {
-  font-size: 0.95em;
+  font-size: 0.8em;
   font-weight: 500;
   color: #666;
-  bottom: 1.8em;
-  margin-top: 8em; 
+  bottom: 1em;
+  margin-top: 5.6em;
 }
 
 .service-icon {
   fill: #666;
   position: absolute;
-  top: 3em;
-  left: 32%;
+  top: 0.9em;
+  left: 26%;
 }

@@ -1,0 +1,87 @@
+/* Card's greed */
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2em;
+}
+
+.home-grid .info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 0.5em;
+}
+
+/* Card */
+.info-card {
+  transition: box-shadow 300ms ease, transform 300ms ease;
+  background-color: #fff;
+
+  /* border-radius: 16px; */
+  /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.14); */
+  cursor: pointer;
+  text-align: center;
+  height: 456px;
+  width: 352px;
+  user-select: none;
+  position: relative;
+  /* color: #262626; */
+  border: 0.01em solid #cccccc;
+}
+.info-card:hover {
+  transform: scale(1.0681818182);
+  z-index: 9999;
+  /* size: auto; */
+  /* transform: translateY(-24px); */
+  /* transform: scale(12em [, 16em]); */
+  box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border: 0.01em solid #336dc4;
+}
+
+.info-card h4 {
+  font-size: 1.6rem;
+  /* font-weight: 500; */
+  color: #666;
+  /* bottom: 1em; */
+  /* margin-top: 5em; */
+  color: #262626;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+.info-card h3 {
+  font-size: initial;
+
+  margin-right: auto;
+  position: relative;
+  font-size: 0.8666666667rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  text-align: left;
+  padding-left: 2em;
+  color: #652d91;
+}
+.info-text {
+  font-family: mwf-segoeui-web, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  overflow: hidden;
+  margin: 1.6rem;
+  max-height: 145px;
+  line-height: 1.5;
+}
+
+.info-card .cellular h3 {
+  font-size: 1em;
+  font-weight: 500;
+  /* color: #666; */
+  bottom: 1em;
+  margin-top: 2em;
+}
+
+.service-icon {
+  fill: #666;
+  position: absolute;
+  top: 0.9em;
+  left: 26%;
+}

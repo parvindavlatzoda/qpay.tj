@@ -10,8 +10,6 @@
   display: none;
 }
 
-
-
 @media (max-width: 767px) {
   .home-grid aside {
     grid-column: 1 / 13;

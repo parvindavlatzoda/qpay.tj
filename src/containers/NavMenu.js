@@ -12,7 +12,7 @@ export default class NavMenu extends React.Component {
             src={logo}
             classname="logo"
             alt="logo"
-            style={{ width: "6em" }}
+            style={{ width: "5em", marginTop: "0.13em" }}
           />
         </Link>
         <ul>
@@ -23,7 +23,7 @@ export default class NavMenu extends React.Component {
             <Link to={"/advertising"}>Реклама</Link>
           </li>
           <li>
-            <Link to={"/"}>Благотворительность</Link>
+            <Link to={"/listcards"}>Благотворительность</Link>
           </li>
           <li>
             <Link to={"/"}>Пополнение кошелька</Link>
