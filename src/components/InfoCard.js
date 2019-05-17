@@ -13,7 +13,7 @@ export default class InfoCard extends React.Component {
         {/* {this.props.image} */}
         <img src={this.props.image} width="100%" alt="logo" />
         <h3>{this.props.title}</h3>
-        <p className="info-text full-text">{this.props.information}</p>
+        <p className="info-text">{this.props.information}</p>
       </article>
     );
   }
