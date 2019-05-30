@@ -1,23 +1,30 @@
 import React from "react";
 import Card from "../components/Card";
 import ListCards from "./ListCards";
+import earth from "./../images/earth.svg";
+import other from "./../images/other1.svg";
+import iphone from "./../images/iphone.svg";
+import wifi from "./../images/wifi.svg";
 
 export default class Payments extends React.Component {
+  state = {
+    selectedCategory: "gosuslugi",
+    title: ""
+  };
+
+  onSelect = event => {
+    const name = event.currentTarget.id;
+    this.setState({ selectedCategory: name });
+  };
   render() {
     let mobilIcon = (
-      <svg
+      <img
         class="service-icon"
-        width="50"
-        height="49"
-        top="1.2em"
+        width="60"
+        height="60"
         viewBox="0 0 32 32"
-      >
-        <path
-          class="payment-menu-nav-item-icon-path-61"
-          fill-rule="nonzero"
-          d="M11 0h10a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4H11a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4zm0 2a2 2 0 0 0-2 2v20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H11zm5 22.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
-        />
-      </svg>
+        src={iphone}
+      />
     );
     let fineIcon = (
       <svg class="service-icon" width="50" height="50" viewBox="0 0 32 32">
@@ -28,63 +35,178 @@ export default class Payments extends React.Component {
         />
       </svg>
     );
-    let utilitiesIcon = (
-      <svg class="service-icon" width="50" height="50" viewBox="0 0 32 32">
-        <path
-          class="payment-menu-nav-item-icon-path-61"
-          fill-rule="nonzero"
-          d="M7.04 8.28A1 1 0 0 1 7 8V4a1 1 0 1 1 2 0v2.854l4.06-2.952a5 5 0 0 1 5.88 0l7 5.091A5 5 0 0 1 28 13.037V22a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-8.963a5 5 0 0 1 2.06-4.044l.98-.713zM23 25a3 3 0 0 0 3-3v-8.963a3 3 0 0 0-1.235-2.426l-7-5.091a3 3 0 0 0-3.53 0l-7 5.09A3 3 0 0 0 6 13.038V22a3 3 0 0 0 3 3h14z"
-        />
-      </svg>
-    );
+    // let utilitiesIcon = (
+    //   <svg class="service-icon" width="50" height="50" viewBox="0 0 32 32">
+    //     <path
+    //       class="payment-menu-nav-item-icon-path-61"
+    //       fill-rule="nonzero"
+    //       d="M7.04 8.28A1 1 0 0 1 7 8V4a1 1 0 1 1 2 0v2.854l4.06-2.952a5 5 0 0 1 5.88 0l7 5.091A5 5 0 0 1 28 13.037V22a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-8.963a5 5 0 0 1 2.06-4.044l.98-.713zM23 25a3 3 0 0 0 3-3v-8.963a3 3 0 0 0-1.235-2.426l-7-5.091a3 3 0 0 0-3.53 0l-7 5.09A3 3 0 0 0 6 13.038V22a3 3 0 0 0 3 3h14z"
+    //     />
+    //   </svg>
+    // );
     let internetIcon = (
-      <svg class="service-icon" width="50" height="50" viewBox="0 0 32 32">
-        <path
-          class="payment-menu-nav-item-icon-path-61"
-          fill-rule="nonzero"
-          d="M3.74 12.505a1 1 0 0 1-1.48-1.345c7.18-7.903 19.172-8.246 26.755-.754l.706.734a1 1 0 1 1-1.442 1.386l-.352-.366-.335-.349c-6.755-6.674-17.436-6.369-23.852.694zm3.946 4.277a1 1 0 0 1-1.512-1.31c4.897-5.655 13.312-6.077 18.694-.991.348.301.692.66.982 1.02a1 1 0 1 1-1.56 1.252 6.227 6.227 0 0 0-.764-.79c-4.586-4.332-11.688-3.976-15.84.819zm4.279 4.55a1 1 0 0 1-1.604-1.194c2.404-3.23 6.882-3.836 9.982-1.344.41.32.684.614 1.26 1.297a1 1 0 0 1-1.53 1.288c-.484-.573-.698-.803-.97-1.016-2.224-1.788-5.406-1.357-7.138.97zM16 23.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"
-        />
-      </svg>
+      <img
+        class="service-icon"
+        width="60"
+        height="60"
+        viewBox="0 0 32 32"
+        src={wifi}
+        alt=""
+      />
     );
     let gamesIcon = (
-      <svg class="service-icon" width="50" height="50" viewBox="0 0 32 32">
-        <path
-          class="payment-menu-nav-item-icon-path-61"
-          fill-rule="nonzero"
-          d="M26.477 22.016a1 1 0 0 1 .178 1.337c-3.252 4.669-9.19 6.678-14.63 4.953C6.56 26.574 2.93 21.647 3 15.99c.071-5.714 3.878-10.804 9.331-12.386 5.483-1.591 11.368.564 14.503 5.311a1 1 0 0 1-.214 1.335l-7.288 5.774 7.144 5.993zm-2.015.92l-7.354-6.169a1 1 0 0 1 .022-1.55l7.5-5.943c-2.75-3.493-7.394-5.012-11.74-3.75C8.288 6.857 5.06 11.173 5 16.013c-.059 4.77 2.997 8.917 7.63 10.386a11.041 11.041 0 0 0 11.832-3.464zM18 10.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
-        />
-      </svg>
+      <img
+        class="service-icon"
+        width="60"
+        height="60"
+        viewBox="0 0 32 32"
+        src="https://static.qiwi.com/img/providers/v2/categories/games.svg"
+        alt=""
+      />
     );
     let bankingIcon = (
-      <svg class="service-icon" width="50" height="50" viewBox="0 0 32 32">
-        <path
-          class="payment-menu-nav-item-icon-path-61"
-          fill-rule="nonzero"
-          d="M28 10.046V25h-2V11h-5v14h-2V11h-6v14h-2V11H6v14H4V10.046a.97.97 0 0 1 .521-.924l11-6a1 1 0 0 1 .958 0l11 6a.97.97 0 0 1 .521.924zM23.078 9L16 5.14 8.922 9h14.156zM29 27H3c-1.333 0-1.333-2 0-2h26c1.333 0 1.333 2 0 2z"
-        />
-      </svg>
+      <img
+        class="service-icon"
+        width="60"
+        height="60"
+        viewBox="0 0 32 32"
+        src="https://static.qiwi.com/img/providers/v2/categories/bank.svg"
+        alt=""
+      />
     );
+    let walletIcon = (
+      <img
+        class="service-icon"
+        width="60"
+        height="60"
+        viewBox="0 0 32 32"
+        src="https://static.qiwi.com/img/providers/v2/categories/wallet.svg"
+        alt=""
+      />
+    );
+    let otherIcon = (
+      <img
+        class="service-icon"
+        width="60"
+        height="60"
+        viewBox="0 0 32 32"
+        src={other}
+        alt=""
+      />
+    );
+    let transportIcon = (
+      <img
+        class="service-icon"
+        width="60"
+        height="60"
+        viewBox="0 0 32 32"
+        src="https://static.qiwi.com/img/providers/v2/categories/transport.svg"
+      />
+    );
+    let homePhoneIcon = (
+      <img
+        class="service-icon"
+        width="60"
+        height="60"
+        viewBox="0 0 32 32"
+        src="https://static.qiwi.com/img/providers/v2/categories/telephony.svg"
+      />
+    );
+    let homeIcon = (
+      <img
+        class="service-icon"
+        width="60"
+        height="60"
+        viewBox="0 0 32 32"
+        src="https://static.qiwi.com/img/providers/v2/categories/house.svg"
+      />
+    );
+
+    let socialIcon = (
+      <img
+        class="service-icon"
+        width="60"
+        height="60"
+        viewBox="0 0 32 32"
+        src="https://static.qiwi.com/img/providers/v2/categories/social.svg"
+      />
+    );
+    let bettingIcon = (
+      <img
+        class="service-icon"
+        width="60"
+        height="60"
+        viewBox="0 0 32 32"
+        src="https://static.qiwi.com/img/providers/v2/categories/fun.svg"
+      />
+    );
+    let internationalIcon = (
+      <img
+        class="service-icon"
+        width="60"
+        height="60"
+        viewBox="0 0 32 32"
+        src={earth}
+      />
+    );
+
+    const cardList = [
+      { name: "cellular", title: "Сотовая связь", icon: mobilIcon },
+      {
+        name: "NGNandHomePhone",
+        title: "Телефония",
+        icon: homePhoneIcon
+      },
+      { name: "wallets", title: "Электронные кошельки", icon: walletIcon },
+      { name: "internet", title: "Интернет", icon: internetIcon },
+      { name: "games", title: "Игры и развлечения", icon: gamesIcon },
+      {
+        name: "internationalservices",
+        title: "Международные операторы",
+        icon: internationalIcon
+      },
+      { name: "social", title: "социальные сети", icon: socialIcon },
+      { name: "banking", title: "Банковские услуги", icon: bankingIcon },
+      { name: "jkh", title: "Услуги ЖКХ", icon: homeIcon },
+      { name: "betting", title: "Букмекерские компании", icon: bettingIcon },
+      { name: "transport", title: "Транспорт", icon: transportIcon },
+      { name: "other", title: "Другие услуги", icon: otherIcon }
+    ];
 
     return (
       <div>
         <h2>Платежи и переводы</h2>
         <div className="cards">
-          <Card title="Сотовая связь" icon={mobilIcon} />
-          <Card title="Госуслуги и штрафы" icon={fineIcon} />
-          <Card title="Услуги ЖКХ" icon={utilitiesIcon} />
-          <Card title="Интернет и ТВ" icon={internetIcon} />
-          <Card title="Игры и развлечения" icon={gamesIcon} />
-          <Card title="Банковские услуги" icon={bankingIcon} />
-          <Card title="Сотовая связь" icon={mobilIcon} />
-          <Card title="Госуслуги и штрафы" icon={fineIcon} />
-          <Card title="Услуги ЖКХ" icon={utilitiesIcon} />
-          <Card title="Интернет и ТВ" icon={internetIcon} />
-          <Card title="Игры и развлечения" icon={gamesIcon} />
-          <Card title="Банковские услуги" icon={bankingIcon} />
+          {cardList.map(card => (
+            <Card
+              name={card.name}
+              onSelect={this.onSelect}
+              title={card.title}
+              icon={card.icon}
+            />
+          ))}
         </div>
+        <span>{this.state.selectedCategory}</span>
         <h2>Список услуг </h2>
-        <ListCards />
+        <ListCards selectedCategory={this.state.selectedCategory} />
       </div>
     );
   }
 }
+
+//           <Card
+//             title="Сотовая связь"
+//             icon={mobilIcon}
+//             onClick={this.onSearch}
+//           />
+//            <Card title="Госуслуги и штрафы" icon={fineIcon} />
+//           <Card title="Услуги ЖКХ" icon={utilitiesIcon} />
+//           <Card title="Интернет и ТВ" icon={internetIcon} />
+//           <Card title="Игры и развлечения" icon={gamesIcon} />
+//           <Card title="Банковские услуги" icon={bankingIcon} />
+//           <Card title="Сотовая связь" icon={mobilIcon} />
+//           <Card title="International services" icon={fineIcon} />
+//           <Card title="e-wallets" icon={utilitiesIcon} />
+//           <Card title="Transport" icon={internetIcon} />
+//           <Card title="betting" icon={gamesIcon} />
+//           <Card title="social networks" icon={bankingIcon} />

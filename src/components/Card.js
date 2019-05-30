@@ -5,11 +5,15 @@ export default class Card extends React.Component {
   render() {
     const cardStyle = {
       backgroundColor: "#ffffff"
-      // padding: "1em"
     };
 
     return (
-      <article className="card" style={cardStyle}>
+      <article
+        className="card"
+        id={this.props.name}
+        style={cardStyle}
+        onClick={this.props.onSelect}
+      >
         {this.props.icon}
         <h3 class="cards-title">{this.props.title}</h3>
       </article>

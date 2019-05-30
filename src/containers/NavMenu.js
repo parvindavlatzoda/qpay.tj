@@ -23,7 +23,7 @@ export default class NavMenu extends React.Component {
             <Link to={"/advertising"}>Реклама</Link>
           </li>
           <li>
-            <Link to={"/listcards"}>Благотворительность</Link>
+            <Link to={"/charity"}>Благотворительность</Link>
           </li>
           <li>
             <Link to={"/"}>Пополнение кошелька</Link>

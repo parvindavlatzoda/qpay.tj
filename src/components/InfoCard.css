@@ -18,13 +18,13 @@
   /* border-radius: 16px; */
   /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.14); */
   cursor: pointer;
-  text-align: center;
+  /* text-align: center; */
   height: 456px;
   width: 352px;
-  user-select: none;
-  position: relative;
+  /* user-select: none; */
+  /* position: relative; */
   /* color: #262626; */
-  border: 0.01em solid #cccccc;
+  border: 0.01em solid #ebebeb;
 }
 .info-card:hover {
   transform: scale(1.0681818182);
@@ -36,24 +36,76 @@
   background-color: #fff;
   border: 0.01em solid #336dc4;
 }
-
 .info-card h3 {
-  font-size: initial;
-  margin-right: auto;
-  position: relative;
-  font-size: 1.6rem;
+  /* font-size: initial; */
+  /* margin-right: auto; */
+  /* position: relative; */
+  font-size: 2em;
+  /* font-size: 1.6rem; */
   font-weight: 700;
-  text-align: left;
+  /* text-align: left; */
   padding-left: 1em;
   color: #652d91;
-  line-height: 1.1;
+  /* line-height: 1.1; */
 }
 .info-text {
-  font-family: sans-serif;
-  font-size: 1em;
   overflow: hidden;
+
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 1.5rem;
+  /*    line-height: 16px;      fallback */
+  font-size: 1em;
+
+  max-height: 145px; /* fallback */
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
+
+  font-family: sans-serif;
   margin: 1.6rem;
-  max-height: 145px;
-  line-height: 1.5;
   text-align: left;
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 1.5rem;
+  font-size: 1em;
+
+  max-height: 145px;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+  font-family: sans-serif;
+  margin: 1.6rem;
+  text-align: left; */
 }
+
+/* .info-text:before {
+  content: "";
+  float: left;
+  width: 5px;
+  height: 200px;
+}
+.info-tex > *:first-child {
+  float: right;
+  width: 100%;
+  margin-left: -5px;
+}
+.info-tex:after {
+  content: "\02026";
+  box-sizing: content-box;
+  float: right;
+  position: relative;
+  top: -25px;
+  left: 100%;
+  width: 3em;
+  margin-left: -3em;
+  padding-right: 5px;
+  text-align: left;
+  background-size: 100% 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    white 50%,
+    white
+  );
+} */

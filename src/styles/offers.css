@@ -1,0 +1,227 @@
+.mainer-self-158 {
+  width: 100%;
+  position: relative;
+  min-width: 960px;
+  min-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  margin-bottom: -280px;
+  padding-right: 16px;
+}
+@media (min-width: 600px) {
+  .mainer-self-158 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .mainer-self-158 {
+    width: 960px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .mainer-self-158 {
+    width: 1180px;
+  }
+}
+.mainer-self-158:after {
+  height: 280px;
+  display: block;
+  content: "";
+}
+
+.main-title-self-164 {
+  color: rgba(0, 0, 0, 0.9);
+  padding: 0;
+  font-size: 32px;
+  margin-top: 35px;
+  line-height: 1.13;
+  font-weight: 900;
+  margin-bottom: 35px;
+}
+.main-title-self-164:first-child {
+  margin-top: 0;
+}
+.main-title-self-164:last-child {
+  margin-bottom: 0;
+}
+.mainer-content-159 {
+  padding: 40px 0;
+}
+.mainer-loader-160 {
+  top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 280px;
+  display: none;
+  z-index: 1;
+  position: absolute;
+  background-color: #f5f5f5;
+}
+.mainer-loading-161 .mainer-content-159 {
+  opacity: 0;
+}
+.mainer-loading-161 .mainer-loader-160 {
+  display: block;
+}
+
+.block-content-self-170 {
+  padding: 45px 45px 50px;
+  position: relative;
+}
+.block-content-icon-171 {
+  top: 40px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  line-height: 0;
+}
+.block-content-content-172 {
+  box-sizing: inherit;
+}
+.block-content-centered-173 {
+  text-align: center;
+}
+.block-content-accented-174 {
+  padding: 45px 45px 50px;
+}
+@media (min-width: 1280px) {
+  .block-content-accented-174 {
+    padding: 45px 70px 50px;
+  }
+}
+
+.block-self-165 {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 10px;
+  background-color: #fff;
+}
+.block-content-no-bottom-175 {
+  padding-bottom: 0;
+}
+.block-content-no-top-176 {
+  padding-top: 0;
+}
+.block-content-line-bottom-177 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.block-content-line-top-178 {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+.offers-info-self-179 {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  display: block;
+  border-radius: 12px;
+}
+
+.content-self-76 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+  flex-direction: row;
+}
+.mainer-self-158:after {
+  height: 280px;
+  display: block;
+  content: "";
+}
+
+.content-column-self-77 {
+  padding: 10px;
+  overflow: visible;
+}
+.content-column-width-12-100 {
+  width: 100%;
+}
+.content-column-width-8-92 {
+  width: 60%;
+  /* width: 66.66666667%; */
+}
+.content-column-width-4-84 {
+  width: 30%;
+}
+.main-title-self-164 {
+  color: rgba(0, 0, 0, 0.9);
+  padding: 0;
+  font-size: 32px;
+  line-height: 1.13;
+  font-weight: 900;
+}
+.main-title-self-164:first-child {
+  margin-top: 0;
+}
+.main-title-self-164:last-child {
+  margin-bottom: 0;
+}
+.block-self-165 {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 10px;
+  background-color: #fff;
+}
+.offers-page-self-0 {
+  min-height: 920px;
+}
+.block-content-self-170 {
+  padding: 45px 45px 50px;
+  position: relative;
+}
+.block-content-line-bottom-177 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.block-content-content-172 {
+  box-sizing: inherit;
+}
+.section-self-230 {
+  box-sizing: inherit;
+}
+.section-size3-233 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.section-size3-233:first-child {
+  margin-top: 0;
+}
+.section-size3-233:last-child {
+  margin-bottom: 0;
+}
+.link-self-11 {
+  color: #0055bb;
+  cursor: pointer;
+  transition: all 120ms cubic-bezier(0.4, 0, 0.2, 1);
+  line-height: 1.31;
+  text-decoration: none;
+}
+.offers-info-self-179 {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  display: block;
+  border-radius: 12px;
+}
+.typo-text-small-188.typo-bold-198 {
+  color: #000;
+  font-weight: 500;
+}
+.typo-self-180:first-child {
+  margin-top: 0;
+}
+.typo-bold-198 {
+  box-sizing: inherit;
+}
+.typo-text-small-188 {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  line-height: 1.43;
+  font-weight: 300;
+}
+.typo-self-180 {
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.typo-self-180:last-child {
+  margin-bottom: 0;
+}

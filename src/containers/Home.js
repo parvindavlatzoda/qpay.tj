@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../components/Card";
-import Payments from "./Payments";
+// import Payments from "./Payments";
 import "./Home.css";
 import ListCards from "./ListCards";
 

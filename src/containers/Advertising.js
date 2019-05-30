@@ -1,7 +1,34 @@
-import React from 'react';
+import React from "react";
+import ads from "./../images/ads.jpg";
 
 export default class Advertising extends React.Component {
-    render() {
-        return <div>dis is info page for ads</div>
-    }
+  render() {
+    return (
+      <div>
+        <div
+          style={{
+            backgroundColor: "white",
+            width: "73.33333333333333%",
+            margin: "10px .833333333333333%",
+            // margin: "1em",
+            padding: "1em"
+          }}
+        >
+          {/* <p style={{ fontSize: "4em" }}>Нужна реклама? Горячая линия 5505</p> */}
+          <img
+            src={ads}
+            style={{
+              // width: "50em",
+              // marginTop: "0.13em",
+              position: "relative",
+              margin: "0 0 65px",
+              width: "100%"
+              // height: "250px"
+            }}
+          />
+          <h1>hello</h1>
+        </div>
+      </div>
+    );
+  }
 }
