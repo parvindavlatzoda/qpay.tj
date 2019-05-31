@@ -5,6 +5,7 @@ import earth from "./../images/earth.svg";
 import other from "./../images/other1.svg";
 import iphone from "./../images/iphone.svg";
 import wifi from "./../images/wifi.svg";
+import charity from "./../images/charity.svg";
 
 export default class Payments extends React.Component {
   state = {
@@ -149,11 +150,20 @@ export default class Payments extends React.Component {
         src={earth}
       />
     );
+    let charityIcon = (
+      <img
+        class="service-icon"
+        width="60"
+        height="60"
+        viewBox="0 0 32 32"
+        src={charity}
+      />
+    );
 
     const cardList = [
       { name: "cellular", title: "Сотовая связь", icon: mobilIcon },
       {
-        name: "NGNandHomePhone",
+        name: "telephoniya",
         title: "Телефония",
         icon: homePhoneIcon
       },
@@ -170,12 +180,13 @@ export default class Payments extends React.Component {
       { name: "jkh", title: "Услуги ЖКХ", icon: homeIcon },
       { name: "betting", title: "Букмекерские компании", icon: bettingIcon },
       { name: "transport", title: "Транспорт", icon: transportIcon },
+      { name: "charity", title: "Благотворительность", icon: charityIcon },
       { name: "other", title: "Другие услуги", icon: otherIcon }
     ];
 
     return (
-      <div>
-        <h2>Платежи и переводы</h2>
+      <div style={{ padding: "5em 7%", backgroundColor: "#f5f5f5" }}>
+        <h2 style={{ margin: "1em" }}>Платежи и переводы</h2>
         <div className="cards">
           {cardList.map(card => (
             <Card
@@ -186,8 +197,8 @@ export default class Payments extends React.Component {
             />
           ))}
         </div>
-        <span>{this.state.selectedCategory}</span>
-        <h2>Список услуг </h2>
+        {/* <span>{this.state.selectedCategory}</span> */}
+        <h2 style={{ margin: "1em" }}>Список услуг </h2>
         <ListCards selectedCategory={this.state.selectedCategory} />
       </div>
     );

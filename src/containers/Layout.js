@@ -1,17 +1,19 @@
-import React, { Fragment } from 'react';
-import NavMenu from './NavMenu';
-import Footer from './Footer';
+import React, { Fragment } from "react";
+import NavMenu from "./NavMenu";
+import Footer from "./Footer";
 
 export default class Layout extends React.Component {
   render() {
     return (
       <Fragment>
-        <header className='header'>
+        <header className="header">
           <NavMenu />
         </header>
-        <main className='content'>
+        {this.props.children}
+
+        {/* <main className='content'>
           {this.props.children}
-        </main>
+        </main> */}
         <Footer />
       </Fragment>
     );

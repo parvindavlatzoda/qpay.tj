@@ -4,7 +4,12 @@ import ads from "./../images/ads.jpg";
 export default class Advertising extends React.Component {
   render() {
     return (
-      <div>
+      <div
+        style={{
+          padding: "5em",
+          backgroundColor: "#f5f5f5"
+        }}
+      >
         <div
           style={{
             backgroundColor: "white",

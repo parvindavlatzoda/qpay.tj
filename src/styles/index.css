@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
-  font-family: 'Helvetica Neue', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Helvetica Neue", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 body {
@@ -9,12 +10,11 @@ body {
 
 a {
   /*color: rgb(22, 126, 251); */
-  color: #3186C1;
+  color: #3186c1;
   text-decoration: none;
 }
 
 a:hover {
-
 }
 
 a:active {
@@ -29,7 +29,6 @@ a:active {
 }
 
 p {
-
 }
 
 .container {
@@ -38,7 +37,7 @@ p {
   grid-gap: 0;
   grid-template-rows: 2fr auto 1fr;
   grid-row-gap: 2em;
-  grid-template-areas: 
+  grid-template-areas:
     "header"
     "content"
     "footer";
@@ -49,14 +48,17 @@ p {
   grid-area: header;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  z-index: 2;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .content {
   grid-area: content;
   /*display: grid;
   grid-template-columns: repeat(12, 1fr);*/
-  padding: 1.5em 8%;
+  /* padding: 1.5em 8%; */
   background-color: #f5f5f5;
 }
 
@@ -72,22 +74,17 @@ p {
   grid-area: footer;
 }
 
-
 @media (min-width: 1600px) {
   .container {
     padding: 1.5em 12%;
   }
 }
 
-
-
-
-
 @media (max-width: 767px) {
   .container {
     padding: 0 4%;
     grid-row-gap: 1.5em;
-    grid-template-areas: 
+    grid-template-areas:
       "header"
       "content"
       "footer";
@@ -114,11 +111,9 @@ p {
   font-size: 1em;
 }
 
-
-
 /* H1..H2 */
 h2 {
-  color: rgba(0,0,0,0.9);
+  color: rgba(0, 0, 0, 0.9);
   font-size: 28px;
   line-height: 1.13;
   font-weight: 900;

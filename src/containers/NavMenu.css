@@ -1,31 +1,32 @@
 nav {
-    grid-column: 1 / 13;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    align-items: center;
-    column-gap: 0.5em;
-}
-
-nav ul{
-    display: flex;
-}
-nav ul li {
-    white-space: nowrap;
-    margin: 1em;
-}
-
-nav img {
-    grid-column: 1 / 2;
+  grid-column: 1 / 13;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  column-gap: 0.5em;
 }
 
 nav ul {
-    grid-column: 2 / 10;
+  display: flex;
+}
+nav ul li {
+  white-space: nowrap;
+  margin: 1em;
+  font-size: 20px;
+}
+
+nav img {
+  grid-column: 1 / 2;
+}
+
+nav ul {
+  grid-column: 2 / 10;
 }
 
 nav li a {
-    color: #2D3540;
+  color: #2d3540;
 }
 
 nav li a:hover {
-    color: #ff8c00;
+  color: #ff8c00;
 }

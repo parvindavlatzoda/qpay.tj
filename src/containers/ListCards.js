@@ -7,6 +7,17 @@ import babilonTLogo from "../images/babilon-t_logo.png";
 import pamirEnergyLogo from "../images/pamir_energy_logo.png";
 import alifMobiKoshelekLogo from "../images/alif_mobi_koshelek_logo.png";
 import dilhoikushodaLogo from "../images/dilhoikushoda_logo.png";
+import onexBet from "./../images/1xBet.png";
+import alifCreditLogo from "./../images/alif_credit.png";
+import alifDepositLogo from "./../images/alif_deposit.png";
+import barqiTojikLogo from "./../images/barqi_tojik.png";
+import bda30Logo from "./../images/bda_30.png";
+import bda60Logo from "./../images/bda_60.png";
+import bda100Logo from "./../images/bda_100.png";
+import dobrososedstvoLogo from "./../images/dobrososedstvo.png";
+import easteraLogo from "./../images/eastera.png";
+import tojbetLogo from "./../images/tojbet.png";
+import viberLogo from "./../images/viber.png";
 
 export default class ListCards extends React.Component {
   render() {
@@ -35,15 +46,99 @@ export default class ListCards extends React.Component {
         information: ""
       },
       {
-        category: "internet",
-        title: "Dilhoi kushoda",
+        category: "social",
+        title: "viber",
+        image: viberLogo,
+        information: ""
+      },
+      {
+        category: "charity",
+        title: "Дилхои кушода",
         image: dilhoikushodaLogo,
+        information: ""
+      },
+      {
+        category: "betting",
+        title: "Рахш",
+        image: tojbetLogo,
+        information: ""
+      },
+      {
+        category: "betting",
+        title: "1XBET",
+        image: onexBet,
         information: ""
       },
       {
         category: "internet",
         title: "BABILON-T",
         image: babilonTLogo,
+        information: ""
+      },
+      {
+        category: "telephoniya",
+        title: "BABILON-T NGN",
+        image: babilonTLogo,
+        information: ""
+      },
+      {
+        category: "internet",
+        title: "EASTERA",
+        image: easteraLogo,
+        information: ""
+      },
+      {
+        category: "jkh",
+        title: "PAMIR ENERGY",
+        image: pamirEnergyLogo,
+        information: ""
+      },
+      {
+        category: "banking",
+        title: "Алиф Погашение кредита",
+        image: alifCreditLogo,
+        information: ""
+      },
+      {
+        category: "banking",
+        title: "Алиф Пополнение депозита",
+        image: alifDepositLogo,
+        information: ""
+      },
+      {
+        category: "wallets",
+        title: "Алиф mobi",
+        image: alifMobiKoshelekLogo,
+        information: ""
+      },
+      {
+        category: "jkh",
+        title: "Барки Точик",
+        image: barqiTojikLogo,
+        information: ""
+      },
+      {
+        category: "transport",
+        title: "БДА обуна 30 руза",
+        image: bda30Logo,
+        information: ""
+      },
+      {
+        category: "transport",
+        title: "БДА обуна 60 руза",
+        image: bda60Logo,
+        information: ""
+      },
+      {
+        category: "transport",
+        title: "БДА обуна 100 руза",
+        image: bda100Logo,
+        information: ""
+      },
+      {
+        category: "charity",
+        title: "Добрососедство",
+        image: dobrososedstvoLogo,
         information: ""
       }
     ];

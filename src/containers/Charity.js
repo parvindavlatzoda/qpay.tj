@@ -4,7 +4,12 @@ import dobro from "./../images/dobro.jpg";
 export default class Charity extends React.Component {
   render() {
     return (
-      <div>
+      <div
+        style={{
+          padding: "5em",
+          backgroundColor: "#f5f5f5"
+        }}
+      >
         <h1 style={{ fontSize: "3em" }}>
           Одним нажатием кнопки вы можете сделать пожертвование
         </h1>
