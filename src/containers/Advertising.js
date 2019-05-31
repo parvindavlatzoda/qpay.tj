@@ -14,7 +14,7 @@ export default class Advertising extends React.Component {
           style={{
             backgroundColor: "white",
             width: "73.33333333333333%",
-            margin: "10px .833333333333333%",
+            // margin: "10px .833333333333333%",
             // margin: "1em",
             padding: "1em"
           }}

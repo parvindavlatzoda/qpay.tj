@@ -17,19 +17,13 @@ export default class Offers extends React.Component {
                     <div class="block-content-content-172">
                       <div class="section-self-230">
                         <div class="section-size3-233">
-                          <a
-                            class="link-self-11"
-                            href="//static.qiwi.com/ru/doc/oferta_lk.pdf"
-                          >
-                            Оферта — «QIWI Кошелек»
+                          <a class="link-self-11" href="#">
+                            Оферта — «QPay Кошелек»
                           </a>
                         </div>
                         <div class="section-size3-233">
-                          <a
-                            class="link-self-11"
-                            href="//static.qiwi.com/ru/doc/oferta_erk.pdf"
-                          >
-                            Оферта — «Единая расчетная карта QIWI»
+                          <a class="link-self-11" href="#">
+                            Оферта — «Единая расчетная карта QPay»
                           </a>
                         </div>
 
@@ -38,23 +32,17 @@ export default class Offers extends React.Component {
                             class="link-self-11"
                             href="//qiwi.com/page/file.action?id=300"
                           >
-                            Оферта — «Виртуальная карта QIWI»
+                            Оферта — «Виртуальная карта QPay»
                           </a>
                         </div>
                         <div class="section-size3-233">
-                          <a
-                            class="link-self-11"
-                            href="//qiwi.com/page/file.action?id=303"
-                          >
-                            Оферта — «Карта QIWI»
+                          <a class="link-self-11" href="#">
+                            Оферта — «Карта QPay»
                           </a>
                         </div>
 
                         <div class="section-size3-233">
-                          <a
-                            class="link-self-11"
-                            href="//qiwi.com/page/file.action?id=2022"
-                          >
+                          <a class="link-self-11" href="#">
                             Оферта — «Осуществление перевода денежных средств по
                             поручению физического лица без открытия банковского
                             счета»
@@ -62,20 +50,14 @@ export default class Offers extends React.Component {
                         </div>
 
                         <div class="section-size3-233">
-                          <a
-                            class="link-self-11"
-                            href="//qiwi.com/page/file.action?id=2019"
-                          >
+                          <a class="link-self-11" href="#">
                             Оферта — «Трансграничные платежи»
                           </a>
                         </div>
 
                         <div class="section-size3-233">
-                          <a
-                            class="link-self-11"
-                            href="//static.qiwi.com/ru/doc/oferta_api.pdf"
-                          >
-                            Оферта — «Условия использования API QIWI Кошелька»
+                          <a class="link-self-11" href="#">
+                            Оферта — «Условия использования API QPay Кошелька»
                           </a>
                         </div>
                       </div>
@@ -91,14 +73,11 @@ export default class Offers extends React.Component {
                             href="//static.qiwi.com/ru/doc/oferta-lk-kzt.pdf"
                           >
                             Публичная оферта об использовании платежного сервиса
-                            «QIWI Кошелек» ТОО КИВИ Казахстан
+                            «QPay Кошелек» ТОО КИВИ Казахстан
                           </a>
                         </div>
                         <div class="section-size3-233">
-                          <a
-                            class="link-self-11"
-                            href="//static.qiwi.com/ru/doc/oferta_akb_kzt.pdf"
-                          >
+                          <a class="link-self-11" href="#">
                             Публичная оферта об оказании услуг безналичных
                             платежей с использованием электронных денег АО
                             АзияКредит Банк в рамках платежной системы «QIWI
@@ -116,7 +95,7 @@ export default class Offers extends React.Component {
                 <div class="block-content-self-170">
                   <div class="block-content-content-172">
                     <p class="typo-self-180 typo-bold-198 typo-text-small-188">
-                      Использование сервисов QIWI Кошелька и карт QIWI
+                      Использование сервисов QPay Кошелька и карт QPay
                       осуществляется в соответствие с офертами.
                     </p>
                     <p class="typo-self-180 typo-bold-198 typo-text-small-188">
@@ -125,8 +104,8 @@ export default class Offers extends React.Component {
                       документов.
                     </p>
                     <p class="typo-self-180 typo-bold-198 typo-text-small-188">
-                      Внимательно ознакомьтесь с офертами, и использование QIWI
-                      Кошелька и карт QIWI будет для вас максимально простым и
+                      Внимательно ознакомьтесь с офертами, и использование QPay
+                      Кошелька и карт QPay будет для вас максимально простым и
                       комфортным.
                     </p>
                   </div>

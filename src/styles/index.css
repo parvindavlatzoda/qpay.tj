@@ -50,7 +50,7 @@ p {
   grid-template-columns: repeat(12, 1fr);
   /* background-color: #ffffff; */
   z-index: 2;
-  position: fixed;
+  position: absolute;
   background-color: rgba(0, 0, 0, 0);
 }
 
