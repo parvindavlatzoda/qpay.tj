@@ -1,5 +1,8 @@
 import React from "react";
+import "./Charity.css";
 import dobro from "./../images/dobro.jpg";
+import dilhoikushoda from "./../images/dilhoikushoda_logo.png";
+import dobrososedstvo from "./../images/dobrososedstvo.png";
 
 export default class Charity extends React.Component {
   render() {
@@ -10,9 +13,7 @@ export default class Charity extends React.Component {
           backgroundColor: "#f5f5f5"
         }}
       >
-        <h1 style={{ fontSize: "3em" }}>
-          Одним нажатием кнопки вы можете сделать пожертвование
-        </h1>
+        <h1 style={{ fontSize: "3em" }}>Благотворительность</h1>
         <div
           style={{
             backgroundColor: "white",
@@ -22,10 +23,9 @@ export default class Charity extends React.Component {
           }}
         >
           <img
-            src={dobro}
+            src={dobrososedstvo}
             style={{ width: "48em", margin: "1em", borderRadius: "4px" }}
           />
-          <div> ghfdfv</div>
         </div>
       </div>
     );

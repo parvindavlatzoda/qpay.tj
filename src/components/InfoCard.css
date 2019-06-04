@@ -42,10 +42,11 @@
   /* position: relative; */
   font-size: 2em;
   /* font-size: 1.6rem; */
-  font-weight: 700;
+  font-weight: 400;
   /* text-align: left; */
   padding-left: 1em;
-  color: #652d91;
+  /* color: #652d91; */
+  color: midnightblue;
   /* line-height: 1.1; */
 }
 .info-text {

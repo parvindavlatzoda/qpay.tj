@@ -7,7 +7,7 @@ export default class Footer extends React.Component {
     return (
       <footer className="footer">
         <ul style={{ gridColumn: "1 / 10" }}>
-          <li>Карта QIWI терминалов</li>
+          <li>Карта терминалов</li>
           <li>Безопасность</li>
           <li>Помощь</li>
           <li>
@@ -22,9 +22,11 @@ export default class Footer extends React.Component {
 
         <ul style={{ gridColumn: "1 / 13" }}>
           <li>Контакты</li>
-          <li>Карта сайта</li>
+
           <li>Бизнесу</li>
-          <li>Работа в QIWI</li>
+          <li>
+            <Link to="/job">Работа в QPay</Link>
+          </li>
         </ul>
         <copy style={{ gridColumn: "1 / 13", justifySelf: "end" }}>
           © 2018, ҶДММ “Пардохти Фаврӣ”

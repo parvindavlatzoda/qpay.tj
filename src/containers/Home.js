@@ -1,13 +1,25 @@
 import React from "react";
 import "./Home.css";
 import socl from "./../images/socl.svg";
+import visamaster from "./../images/visamaster.svg";
 import glavnaya from "./../images/glavnaya.jpg";
+import banking from "./../images/banking.svg";
+import ewallets from "./../images/ewallets.svg";
+import terminals from "./../images/terminals.svg";
 
+const images = [ewallets, terminals, socl, visamaster, banking];
+// const image = images[Math.floor(Math.random() * images.length)];
 export default class Home extends React.Component {
   render() {
     return (
       <div>
+        <img src={images[Math.floor(Math.random() * images.length)]} />
+
+        {/* <img src={ewallets} />
+        <img src={terminals} />
         <img src={socl} />
+        <img src={visamaster} />
+        <img src={banking} /> */}
       </div>
     );
   }

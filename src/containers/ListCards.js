@@ -18,6 +18,15 @@ import dobrososedstvoLogo from "./../images/dobrososedstvo.png";
 import easteraLogo from "./../images/eastera.png";
 import tojbetLogo from "./../images/tojbet.png";
 import viberLogo from "./../images/viber.png";
+import megafonLogo from "./../images/megafon.png";
+import tojikMobileLogo from "./../images/tojik_mobile.png";
+import ttlLogo from "./../images/ttl.png";
+import intercomLogo from "./../images/intercom.png";
+import qiwiLogo from "./../images/qiwi_wallet_logo.png";
+import wmrLogo from "./../images/wmr.png";
+import wmzLogo from "./../images/wmz.png";
+import yandexMoneyLogo from "./../images/yandex_money.png";
+import monetaruLogo from "./../images/monetaru.png";
 
 export default class ListCards extends React.Component {
   render() {
@@ -35,6 +44,12 @@ export default class ListCards extends React.Component {
       },
       {
         category: "cellular",
+        title: "МегаФон",
+        image: megafonLogo,
+        information: ""
+      },
+      {
+        category: "cellular",
         title: "Beeline",
         image: beelineLogo,
         information: infoBeeline
@@ -43,6 +58,12 @@ export default class ListCards extends React.Component {
         category: "cellular",
         title: "BABILON-M",
         image: babilonMLogo,
+        information: ""
+      },
+      {
+        category: "cellular",
+        title: "Точик Мобайл",
+        image: tojikMobileLogo,
         information: ""
       },
       {
@@ -82,6 +103,30 @@ export default class ListCards extends React.Component {
         information: ""
       },
       {
+        category: "telephoniya",
+        title: "TTL",
+        image: ttlLogo,
+        information: ""
+      },
+      {
+        category: "telephoniya",
+        title: "INTERCOM",
+        image: intercomLogo,
+        information: ""
+      },
+      {
+        category: "telephoniya",
+        title: "EASTERA",
+        image: easteraLogo,
+        information: ""
+      },
+      {
+        category: "telephoniya",
+        title: "Точик Мобайл",
+        image: tojikMobileLogo,
+        information: ""
+      },
+      {
         category: "internet",
         title: "EASTERA",
         image: easteraLogo,
@@ -109,6 +154,36 @@ export default class ListCards extends React.Component {
         category: "wallets",
         title: "Алиф mobi",
         image: alifMobiKoshelekLogo,
+        information: ""
+      },
+      {
+        category: "wallets",
+        title: "moneta ru",
+        image: monetaruLogo,
+        information: ""
+      },
+      {
+        category: "wallets",
+        title: "QIWI кошелек",
+        image: qiwiLogo,
+        information: ""
+      },
+      {
+        category: "wallets",
+        title: "WebMoney R",
+        image: wmrLogo,
+        information: ""
+      },
+      {
+        category: "wallets",
+        title: "WebMoney Z",
+        image: wmzLogo,
+        information: ""
+      },
+      {
+        category: "wallets",
+        title: "Яндекс Деньги",
+        image: yandexMoneyLogo,
         information: ""
       },
       {

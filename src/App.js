@@ -7,6 +7,7 @@ import Payments from "./containers/Payments";
 import Advertising from "./containers/Advertising";
 import Charity from "./containers/Charity";
 import Offers from "./containers/Offers";
+import Job from "./containers/Job";
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
         <Route exact path="/advertising" component={Advertising} />
         <Route exact path="/charity" component={Charity} />
         <Route exact path="/offers" component={Offers} />
+        <Route exact path="/job" component={Job} />
       </Layout>
     );
   }
