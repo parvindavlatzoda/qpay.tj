@@ -176,21 +176,24 @@ export default class Payments extends React.Component {
     ];
 
     return (
-      <div style={{ padding: "5em 7%", backgroundColor: "#f5f5f5" }}>
-        <h2 style={{ margin: "1em" }}>Платежи и переводы</h2>
-        <div className="cards">
-          {cardList.map(card => (
-            <Card
-              name={card.name}
-              onSelect={this.onSelect}
-              title={card.title}
-              icon={card.icon}
-            />
-          ))}
+      <div>
+        <div class="header-back" />
+        <div class="main-div">
+          <h2>Платежи и переводы</h2>
+          <div className="cards">
+            {cardList.map(card => (
+              <Card
+                name={card.name}
+                onSelect={this.onSelect}
+                title={card.title}
+                icon={card.icon}
+              />
+            ))}
+          </div>
+          {/* <span>{this.state.selectedCategory}</span> */}
+          <h2>Список услуг </h2>
+          <ListCards selectedCategory={this.state.selectedCategory} />
         </div>
-        {/* <span>{this.state.selectedCategory}</span> */}
-        <h2 style={{ margin: "1em" }}>Список услуг </h2>
-        <ListCards selectedCategory={this.state.selectedCategory} />
       </div>
     );
   }

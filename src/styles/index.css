@@ -118,4 +118,10 @@ h2 {
   line-height: 1.13;
   font-weight: 900;
   margin-bottom: 0.5em;
+  margin: 1em;
+}
+
+.header-back {
+  background-color: #ffffff;
+  height: 5em;
 }

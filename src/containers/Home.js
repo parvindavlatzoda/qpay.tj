@@ -2,7 +2,6 @@ import React from "react";
 import "./Home.css";
 import socl from "./../images/socl.svg";
 import visamaster from "./../images/visamaster.svg";
-import glavnaya from "./../images/glavnaya.jpg";
 import banking from "./../images/banking.svg";
 import ewallets from "./../images/ewallets.svg";
 import terminals from "./../images/terminals.svg";

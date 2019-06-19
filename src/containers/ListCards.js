@@ -27,6 +27,7 @@ import wmrLogo from "./../images/wmr.png";
 import wmzLogo from "./../images/wmz.png";
 import yandexMoneyLogo from "./../images/yandex_money.png";
 import monetaruLogo from "./../images/monetaru.png";
+import fondrushdiLogo from "./../images/fondrushdi.png";
 
 export default class ListCards extends React.Component {
   render() {
@@ -76,6 +77,12 @@ export default class ListCards extends React.Component {
         category: "charity",
         title: "Дилхои кушода",
         image: dilhoikushodaLogo,
+        information: ""
+      },
+      {
+        category: "charity",
+        title: "Фонди Рушди Точикистон",
+        image: fondrushdiLogo,
         information: ""
       },
       {

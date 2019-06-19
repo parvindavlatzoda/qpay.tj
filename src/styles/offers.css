@@ -226,3 +226,35 @@
 .typo-self-180:last-child {
   margin-bottom: 0;
 }
+
+/* popitka */
+
+.column-1 {
+  width: 63%;
+  padding: 10px;
+}
+.column-2 {
+  width: 33%;
+  padding: 10px;
+}
+.block-1 {
+  background-color: #fff;
+  padding: 45px 45px 50px;
+  position: relative;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 10px;
+}
+.block-2 {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 45px 45px 50px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.link-offer {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.link-offer:first-child {
+  margin-top: 0;
+}

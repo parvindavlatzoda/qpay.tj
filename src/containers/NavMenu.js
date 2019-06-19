@@ -26,9 +26,9 @@ export default class NavMenu extends React.Component {
             <Link to={"/charity"}>Благотворительность</Link>
           </li>
 
-          {/* <li>
-            <Link to={"/"}>Пополнение кошелька</Link>
-          </li> */}
+          <li>
+            <Link to={"/faq"}>FAQ</Link>
+          </li>
         </ul>
       </nav>
     );
