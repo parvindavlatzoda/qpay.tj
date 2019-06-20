@@ -13,7 +13,7 @@ export default class Offers extends React.Component {
             <div class="column-1">
               <div class="block-1">
                 <div class="link-offer">
-                  <a class="link-self-11" href="#">
+                  <a class="link-self-11" href={offerTj} target="_blank">
                     Оферта для использования терминала
                   </a>
                 </div>
