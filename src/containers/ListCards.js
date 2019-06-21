@@ -37,7 +37,7 @@ export default class ListCards extends React.Component {
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nisl rhoncus mattis rhoncus urna neque viverra justo. Ut lectus arcu bibendum at varius. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Vulputate mi sit amet mauris commodo quis. Eget aliquet nibh praesent tristique. Sed libero enim sed faucibus turpis in. Fermentum iaculis eu non diam phasellus vestibulum. Habitant morbi tristique senectus et netus.";
     let infoBabilonM =
       "98x-xx-xx-xx 918-xx-xx-xx Минимальная сумма платежа: 0.25 с. Провайдер: ЗАО Международный банк Таджикистана, ИНН: 020043405, адресс провайдера: Таджикистан, 734002, г. Душанбе, р-н И. Сомони, ул. М. Курбонова 24";
-
+    let infoBabilonMExample = ["98x-xx-xx-xx", "918-xx-xx-xx", "94x-xx-xx-xx"];
     const infoCardList = [
       {
         category: "cellular",
@@ -61,6 +61,7 @@ export default class ListCards extends React.Component {
         category: "cellular",
         title: "BABILON-M",
         image: babilonMLogo,
+        example: infoBabilonMExample,
         information: infoBabilonM
       },
       {
@@ -239,6 +240,7 @@ export default class ListCards extends React.Component {
                 category={infoCard.category}
                 image={infoCard.image}
                 title={infoCard.title}
+                // example={infoCard.example}
                 information={infoCard.information}
                 // onSelect={this.onSelect}
               />

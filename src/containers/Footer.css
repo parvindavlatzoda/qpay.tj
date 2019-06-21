@@ -1,42 +1,40 @@
 .footer {
-    background-color: #ffffff;
-    color: #707070;
-    padding: 1em 8%;
+  background-color: #ffffff;
+  color: #707070;
+  padding: 1em 8%;
 }
 
 .footer {
-    grid-column: 1 / 13;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+  grid-column: 1 / 13;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 
-
-.footer ul{
-    display: flex;
+.footer ul {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer ul li {
-    white-space: nowrap;
-    margin: 1em;
-    font-size: 0.85em;
+  white-space: nowrap;
+  margin: 0.8em;
+  font-size: 0.85em;
 }
 
 .footer li a {
-    color: #707070;
+  color: #707070;
 }
 
 .footer li a:hover {
-    color: #2D3540;
+  color: #2d3540;
 }
 
-copy, address {
-    white-space: nowrap;
-    font-size: 0.85em;
-    margin: 0.25em 0;
+copy,
+address {
+  /* white-space: nowrap; */
+  font-size: 0.85em;
+  margin: 0.25em 0;
 }
-
-
-
 
 /* Call center number */
 .footer .call-center {
@@ -53,3 +51,54 @@ copy, address {
   font-size: 0.85em;
   display: block;
 }
+
+/* @media  для смартфонов*/
+@media (max-width: 320px) {
+  /* main {
+    width: 15.5em;
+  }
+  article {
+    grid-row: 1;
+  } */
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  /* Call center number */
+  .footer .call-center {
+    /* grid-column: 4 /10; */
+    margin: 1em;
+    justify-self: end;
+    text-align: center;
+    align-items: flex-end;
+    position: end;
+  }
+}
+/* 
+@media (min-width: 360px) {
+  main {
+    width: 18em;
+  }
+  article {
+    grid-row: 1;
+  }
+}
+
+@media (min-width: 375px) {
+  main {
+    width: 19em;
+  }
+  article {
+    grid-row: 1;
+  }
+}
+
+@media (min-width: 410px) {
+  main {
+    width: 20em;
+  }
+  article {
+    grid-row: 1;
+  }
+} */
