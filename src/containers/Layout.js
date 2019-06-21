@@ -9,11 +9,9 @@ export default class Layout extends React.Component {
         <header className="header">
           <NavMenu />
         </header>
-        {this.props.children}
+        {/* {this.props.children} */}
 
-        {/* <main className='content'>
-          {this.props.children}
-        </main> */}
+        <main className="content">{this.props.children}</main>
         <Footer />
       </Fragment>
     );

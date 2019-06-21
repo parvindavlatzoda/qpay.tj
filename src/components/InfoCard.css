@@ -19,8 +19,12 @@
   /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.14); */
   cursor: pointer;
   /* text-align: center; */
-  height: 456px;
-  width: 352px;
+  /* height: 456px;
+  width: 352px; */
+
+  height: 35em;
+  width: 23em;
+
   /* user-select: none; */
   /* position: relative; */
   /* color: #262626; */

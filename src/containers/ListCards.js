@@ -35,6 +35,8 @@ export default class ListCards extends React.Component {
       "компания beeline уже 10 лет занимается попороцией всякой ерунды, которая приносит прибыль не только  мне, но и моим друзьям.просто тут вякая еруна кому это надо. Я соглашаюсь с условием конфидициальности. Это право  каждого партизана быть придурком или уродом";
     let infoTcell =
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nisl rhoncus mattis rhoncus urna neque viverra justo. Ut lectus arcu bibendum at varius. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Vulputate mi sit amet mauris commodo quis. Eget aliquet nibh praesent tristique. Sed libero enim sed faucibus turpis in. Fermentum iaculis eu non diam phasellus vestibulum. Habitant morbi tristique senectus et netus.";
+    let infoBabilonM =
+      "98x-xx-xx-xx 918-xx-xx-xx Минимальная сумма платежа: 0.25 с. Провайдер: ЗАО Международный банк Таджикистана, ИНН: 020043405, адресс провайдера: Таджикистан, 734002, г. Душанбе, р-н И. Сомони, ул. М. Курбонова 24";
 
     const infoCardList = [
       {
@@ -59,7 +61,7 @@ export default class ListCards extends React.Component {
         category: "cellular",
         title: "BABILON-M",
         image: babilonMLogo,
-        information: ""
+        information: infoBabilonM
       },
       {
         category: "cellular",
