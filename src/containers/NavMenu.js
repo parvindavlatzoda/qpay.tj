@@ -10,9 +10,9 @@ export default class NavMenu extends React.Component {
         <Link to={"/"}>
           <img
             src={logo}
-            classname="logo"
+            class="logo"
             alt="logo"
-            style={{ width: "5em", marginTop: "0.13em" }}
+            // style={{ width: "5em", marginTop: "0.13em" }}
           />
         </Link>
         <ul>

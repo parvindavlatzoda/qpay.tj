@@ -30,3 +30,17 @@ nav li a {
 nav li a:hover {
   color: #ff8c00;
 }
+
+.logo{
+  width: 5em;
+   margin-top: 0.13em;
+}
+
+/* @media  для смартфонов*/
+@media (max-width: 320px) {
+  .logo{
+     margin-top: 0.7em;
+  }
+
+}
+
