@@ -99,9 +99,9 @@ p {
     display: block;
   }
 
-  .header ul {
+  /* .header ul {
     display: none;
-  }
+  } */
 }
 
 .sidebar section ul li {

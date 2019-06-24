@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../images/qpay_logo.svg";
 import "./NavMenu.css";
 
+
 export default class NavMenu extends React.Component {
   render() {
     return (
@@ -10,7 +11,7 @@ export default class NavMenu extends React.Component {
         <Link to={"/"}>
           <img
             src={logo}
-            class="logo"
+            className="logo"
             alt="logo"
             // style={{ width: "5em", marginTop: "0.13em" }}
           />

@@ -44,3 +44,24 @@ nav li a:hover {
 
 }
 
+@media (max-width: 360px) {
+  .logo{
+     margin-top: 0.7em;
+  }
+}
+@media (max-width: 375px) {
+  .logo{
+     margin-top: 0.7em;
+  }
+}
+@media (max-width: 410px) {
+  .logo{
+     margin-top: 0.7em;
+  }
+}
+@media (max-width: 767px) {
+  
+  .header ul {
+    display: none;
+  }
+}
