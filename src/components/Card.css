@@ -59,4 +59,18 @@
     height: 9em;
     width: 9em;
   }
+  .card h3 {
+    font-size: 0.7em;
+  
+  }
+}
+
+@media (max-width: 360px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: 1em;
+  }
+ 
+  
 }

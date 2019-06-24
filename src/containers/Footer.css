@@ -75,6 +75,54 @@ address {
     position: end;
   }
 }
+@media (max-width: 375px) {
+  /* main {
+    width: 15.5em;
+  }
+  article {
+    grid-row: 1;
+  } */
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  /* Call center number */
+  .footer .call-center {
+    /* grid-column: 4 /10; */
+    margin: 1em;
+    justify-self: end;
+    text-align: center;
+    align-items: flex-end;
+    position: end;
+  }
+  .footer ul li {
+    margin: 0.7em;
+  }
+}
+@media (max-width: 410px) {
+  .footer {
+   
+    padding: 1em 6%;
+  }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  /* Call center number */
+  .footer .call-center {
+    /* grid-column: 4 /10; */
+    margin: 1em;
+    justify-self: end;
+    text-align: center;
+    align-items: flex-end;
+    position: end;
+  }
+  .footer ul li {
+    margin: 0.7em;
+  }
+}
 /* 
 @media (min-width: 360px) {
   main {

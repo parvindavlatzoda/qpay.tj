@@ -7,7 +7,7 @@ export default class Layout extends React.Component {
     return (
       <Fragment>
         <header className="header">
-          <NavMenu />
+          {/* <NavMenu /> */}
         </header>
         {/* {this.props.children} */}
 
