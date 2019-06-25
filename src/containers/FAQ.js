@@ -1,6 +1,5 @@
 import React from "react";
 
-import "./Faq.css";
 import Accordion from "./Accordion";
 
 export default class Faq extends React.Component {
@@ -9,8 +8,8 @@ export default class Faq extends React.Component {
       <div>
         <div class="header-back" />
         <div class="main-div">
+          <h2>Вопросы и ответы</h2>
           <div class="container-faq">
-            <h2>Вопросы и ответы</h2>
             <div>
               <Accordion>
                 <div label="Как пополнить свой счет?">

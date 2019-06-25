@@ -61,7 +61,6 @@
   }
   .card h3 {
     font-size: 0.7em;
-  
   }
 }
 
@@ -71,6 +70,4 @@
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     grid-gap: 1em;
   }
- 
-  
 }

@@ -68,3 +68,15 @@
 .link-offer:first-child {
   margin-top: 0;
 }
+.link-offer:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 360px), (max-width: 410px) {
+  .column-1 {
+    width: 100%;
+  }
+  .column-2 {
+    width: 100%;
+  }
+}
