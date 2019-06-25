@@ -5,7 +5,7 @@ import "./MobileMenu.css";
 export default class MobileMenu extends React.Component {
   render() {
     return (
-      <div>
+      <div className="burger-menu">
         <input type="checkbox" id="overlay-input" />
         <label for="overlay-input" id="overlay-button">
           <span />
@@ -23,6 +23,9 @@ export default class MobileMenu extends React.Component {
             </li>
             <li>
               <Link to={"/advertising"}>Благотворительность</Link>
+            </li>
+            <li>
+              <Link to={"/Faq"}>FAQ</Link>
             </li>
           </ul>
         </div>

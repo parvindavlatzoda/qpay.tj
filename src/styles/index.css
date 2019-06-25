@@ -53,6 +53,10 @@ p {
   position: absolute;
   background-color: rgba(0, 0, 0, 0);
 }
+.header-back {
+  background-color: #ffffff;
+  height: 5em;
+}
 
 .content {
   grid-area: content;
@@ -99,6 +103,9 @@ p {
     display: block;
   }
 
+  .header-back {
+    height: 3em;
+  }
   /* .header ul {
     display: none;
   } */
@@ -119,9 +126,4 @@ h2 {
   font-weight: 900;
   margin-bottom: 0.5em;
   margin: 1em;
-}
-
-.header-back {
-  background-color: #ffffff;
-  height: 5em;
 }

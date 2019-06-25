@@ -100,9 +100,8 @@ address {
     margin: 0.7em;
   }
 }
-@media (max-width: 410px) {
+@media (max-width: 410px), (max-width: 414px) {
   .footer {
-   
     padding: 1em 6%;
   }
   .footer {
