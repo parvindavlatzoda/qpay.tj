@@ -5,7 +5,7 @@ import dilhoikushoda from "./../images/dilhoikushoda_logo.png";
 import dobrososedstvo from "./../images/dobrososedstvo.png";
 import fondrushdi from "./../images/fondrushdi.png";
 
-import hands from "./../images/hands.jpg";
+// import hands from "./../images/hands.jpg";
 
 export default class Charity extends React.Component {
   render() {
