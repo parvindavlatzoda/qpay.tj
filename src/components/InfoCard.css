@@ -1,7 +1,7 @@
 /* Card's greed */
 .info-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(319px, 1fr));
   grid-gap: 2em;
 }
 
@@ -101,10 +101,10 @@
 }
 
 @media (min-width: 360px) {
-  .info-cards {
+  /* .info-cards {
     display: grid;
     grid-gap: 2em;
-  }
+  } */
   .info-card {
     height: 25em;
     width: 20.7em;
