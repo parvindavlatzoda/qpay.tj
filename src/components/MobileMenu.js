@@ -7,7 +7,7 @@ export default class MobileMenu extends React.Component {
     openMenu: false
   };
 
-  СhangeMenu = () => {
+  ChangeMenu = () => {
     this.setState({ openMenu: !this.state.openMenu });
     console.log("change state");
     // this.setState(state => ({ openMenu: !state.openMenu }));
@@ -15,6 +15,10 @@ export default class MobileMenu extends React.Component {
     // console.log({ openMenu });
     // this.state();
   };
+  CloseMenu() {
+    this.setState({ openMenu: false });
+  }
+
   render() {
     return (
       <div className="burger-menu">
@@ -29,14 +33,13 @@ export default class MobileMenu extends React.Component {
         </label>
         <div id="overlay">
           <ul>
-            {/* <li>
-              <a href="#">Home</a>
-            </li> */}
             <li>
-              <Link
-                // onClick={this.CloseMenu}
-                to={"/payments"}
-              >
+              <Link onClick={this.CloseMenu} to={"/"}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link onClick={this.CloseMenu} to={"/payments"}>
                 Платежи и переводы
               </Link>
             </li>
@@ -44,10 +47,14 @@ export default class MobileMenu extends React.Component {
               <Link to={"/advertising"}>Реклама</Link>
             </li> */}
             <li>
-              <Link to={"/advertising"}>Благотворительность</Link>
+              <Link onClick={this.CloseMenu} to={"/charity"}>
+                Благотворительность
+              </Link>
             </li>
             <li>
-              <Link to={"/Faq"}>FAQ</Link>
+              <Link onClick={this.CloseMenu} to={"/Faq"}>
+                FAQ
+              </Link>
             </li>
           </ul>
         </div>
