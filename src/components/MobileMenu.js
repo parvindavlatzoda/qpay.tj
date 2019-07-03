@@ -12,15 +12,15 @@ export default class MobileMenu extends React.Component {
         </label>
         <div id="overlay">
           <ul>
-            <li>
+            {/* <li>
               <a href="#">Home</a>
-            </li>
+            </li> */}
             <li>
               <Link to={"/payments"}>Платежи и переводы</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to={"/advertising"}>Реклама</Link>
-            </li>
+            </li> */}
             <li>
               <Link to={"/advertising"}>Благотворительность</Link>
             </li>

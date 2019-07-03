@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import logo from "../images/qpay_logo.svg";
 import "./NavMenu.css";
 
-
 export default class NavMenu extends React.Component {
   render() {
     return (
@@ -20,9 +19,9 @@ export default class NavMenu extends React.Component {
           <li>
             <Link to={"/payments"}>Платежи и переводы</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to={"/advertising"}>Реклама</Link>
-          </li>
+          </li> */}
           <li>
             <Link to={"/charity"}>Благотворительность</Link>
           </li>
