@@ -39,6 +39,7 @@
   box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.1);
   background-color: #fff;
   border: 0.01em solid #336dc4;
+  /* height: auto; */
 }
 .info-card h3 {
   /* font-size: initial; */
@@ -52,6 +53,22 @@
   /* color: #652d91; */
   color: midnightblue;
   /* line-height: 1.1; */
+}
+.example {
+  font-size: 1.3em;
+  margin: 0 1.6rem;
+  color: crimson;
+  font-weight: 700;
+}
+.card-title-1 {
+  font-size: 1em;
+  margin: 1.6rem;
+
+  /* font-weight: 700; */
+}
+.card-provider {
+  font-size: 1em;
+  margin: 1.6rem;
 }
 .info-text {
   overflow: hidden;
@@ -95,7 +112,7 @@
     background-color: #fff;
     cursor: pointer; */
 
-    height: 25em;
+    /* height: 25em; */
     width: 17em;
   }
 }
@@ -106,20 +123,22 @@
     grid-gap: 2em;
   } */
   .info-card {
-    height: 25em;
+    /* height: 25em; */
+    height: auto;
+
     width: 20.7em;
   }
 }
 
 @media (min-width: 375px) {
   .info-card {
-    height: 25em;
+    /* height: 25em; */
     width: 20.7em;
   }
 }
 @media (min-width: 410px) {
   .info-card {
-    height: 25em;
+    /* height: 25em; */
     width: 22.5em;
   }
 }

@@ -28,6 +28,15 @@ import wmzLogo from "./../images/wmz.png";
 import yandexMoneyLogo from "./../images/yandex_money.png";
 import monetaruLogo from "./../images/monetaru.png";
 import fondrushdiLogo from "./../images/fondrushdi.png";
+import tojnetLogo from "./../images/tojnet.png";
+import ismtjLogo from "./../images/ismtj.png";
+import somontjLogo from "./../images/somontj.png";
+import skypeLogo from "./../images/skype.png";
+import vkLogo from "./../images/vk.png";
+import okLogo from "./../images/ok.png";
+import instashoptjLogo from "./../images/instashoptj.png";
+import elsomLogo from "./../images/elsom.png";
+import tennisiLogo from "./../images/tennisi.png";
 
 export default class ListCards extends React.Component {
   render() {
@@ -35,112 +44,271 @@ export default class ListCards extends React.Component {
       "компания beeline уже 10 лет занимается попороцией всякой ерунды, которая приносит прибыль не только  мне, но и моим друзьям.просто тут вякая еруна кому это надо. Я соглашаюсь с условием конфидициальности. Это право  каждого партизана быть придурком или уродом";
     let infoTcell =
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nisl rhoncus mattis rhoncus urna neque viverra justo. Ut lectus arcu bibendum at varius. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Vulputate mi sit amet mauris commodo quis. Eget aliquet nibh praesent tristique. Sed libero enim sed faucibus turpis in. Fermentum iaculis eu non diam phasellus vestibulum. Habitant morbi tristique senectus et netus.";
-    let infoBabilonM =
-      "98x-xx-xx-xx 918-xx-xx-xx Минимальная сумма платежа: 0.25 с. Провайдер: ЗАО Международный банк Таджикистана, ИНН: 020043405, адресс провайдера: Таджикистан, 734002, г. Душанбе, р-н И. Сомони, ул. М. Курбонова 24";
-    let infoBabilonMExample = ["98x-xx-xx-xx", "918-xx-xx-xx", "94x-xx-xx-xx"];
+    // let infoBabilonM =
+    //   "98x-xx-xx-xx 918-xx-xx-xx Минимальная сумма платежа: 0.25 с. Провайдер: ЗАО Международный банк Таджикистана, ИНН: 020043405, адресс провайдера: Таджикистан, 734002, г. Душанбе, р-н И. Сомони, ул. М. Курбонова 24";
+    // let infoBabilonMExample = ["98x-xx-xx-xx", "918-xx-xx-xx", "94x-xx-xx-xx"];
+    let babilonMExample = "98x-xx-xx-xx 918-xx-xx-xx 94x-xx-xx-xx";
+    // providers
+    let internBankProvider =
+      "ЗАО Международный банк Таджикистана, ИНН: 020043405";
+    let internBankProviderAdress =
+      "Таджикистан, 734002, г. Душанбе, р-н И. Сомони, ул. М. Курбонова 24";
+    let tojikMobileProvider = "ООО Точикмобайл, ИНН: 02009380";
+    let tojikMobileProviderAdress = "Таджикистан, Душанбе, пр. Рудаки 53";
+    let fmfbProvider = "ЗАО ПМФБ, ИНН: 020015974, тел: 37 228-93-14";
+    let fmfbProviderAdress = "Таджикистан, Душанбе, пр. Рудаки 105";
+    let ttlProvider = "ЗАО ТелекомТехнолоджи, тел: 48 701-88-88";
+    let ttlProviderAdress = "Таджикистан, Душанбе, ул. Бохтар 48/3";
+    let intercomProvider = "ООО «Интерком», ИНН: 020002799, тел: 48 701-88-88";
+    let intercomProviderAdress = "Таджикистан, Душанбе, пр. Рудаки 81-2";
+    let ismtjProvider = "ООО Исм ТЧ, ИНН: 040032055";
+    let ismtjProviderAdress = "Таджикистан, Душанбе, ул. Мухамадиева 52";
+    let fondrushdiProvider = "Фонд Рушди Тоҷикистон, ИНН: 020043775, тел: 5505";
+    let fondrushdiProviderAdress =
+      "Таджикистан, г. Душанбе, р-н Шоҳмансур, ул. Айни, 48";
+    let dobrososedstvoProvider =
+      "НПО Международное Добрососедство, ИНН: 040012220";
+    let dobrososedstvoProviderAdress = "Таджикистан, г. Душанбе, Мушфики, 47";
+    let dilhoikushodaProvider =
+      "Благотворительная организация Дилхои Кушода, ИНН: 010100171, тел: 5505";
+    let dilhoikushodaProviderAdress =
+      "Таджикистан, г. Душанбе, р-н Шоҳмансур, ул. Айни, 48";
+    let pardokhttjProvider = "ООО Пардохт ТЧ, ИНН: 020038712";
+    let pardokhttjProviderAdress =
+      "Таджикистан, Душанбе, ул. М. Турсунзода 13/23";
+    let irsolProvider = "ООО Ирсол, ИНН: 040051314, тел: 91 902-21-22";
+    let irsolProviderAdress = "Таджикистан, г. Душанбе, ул. Н. Махсум 75";
+
+    // examples
+    let megafonExample = "90x-xx-xx-xx 55x-xx-xx-xx 88x-xx-xx-xx 41x-xx-xx-xx";
+    let beelineExample = "91x-xx-xx-xx";
+    let tcellExample =
+      "93x-xx-xx-xx 92x-xx-xx-xx 50x-xx-xx-xx 77x-xx-xx-xx 70x-xx-xx-xx 99x-xx-xx-xx";
+    let tojikMobileExample = "37x-xx-xx-xx 31x-xx-xx-xx";
+    let ttlExample = "48x-xx-xx-xx";
+    let intercomExample = "42x-xx-xx-xx";
+    let easteraExample = "43x-xx-xx-xx";
+    let babilonTExample = "xxxxx";
+    let easteraInternet = "xxxxxxxxxxxxx";
+    let somontjExample = "992-xxx-xxx-xxx";
+    let viberExample = "992-xxx-xx-xx-xx 7-xxx-xxx-xx-xx";
+    let qiwiExample =
+      "7xxx-xxx–xx–xx 77xx xxx–xx–xx 992xxxxx–xx–xx 998xx xxx–xx–xx";
+    let wmzExample = "Z xxxxxxxxxxxx";
+    let wmrExample = "R xxxxxxxxxxxx";
+
+    let nineExample = "xxxxxxxxx";
+    let twelveExample = "xxxxxxxxxxxx";
+    let elsomExample = "070xxxxxx 077xxxxxx 055xxxxxxxx";
+    let twentyfourExample = "xxxxxxxxxxxxxxxxxxxxxxxx";
+
     const infoCardList = [
       {
         category: "cellular",
-        title: "Tcell",
-        image: tcellLogo,
-        information: infoTcell
+        title: "BABILON-M",
+        image: babilonMLogo,
+        example: babilonMExample,
+        provider: internBankProvider,
+        adress: internBankProviderAdress
       },
       {
         category: "cellular",
         title: "МегаФон",
         image: megafonLogo,
-        information: ""
+        example: megafonExample,
+        provider: internBankProvider,
+        adress: internBankProviderAdress
       },
       {
         category: "cellular",
         title: "Beeline",
         image: beelineLogo,
-        information: infoBeeline
+        example: beelineExample,
+        provider: internBankProvider,
+        adress: internBankProviderAdress
       },
       {
         category: "cellular",
-        title: "BABILON-M",
-        image: babilonMLogo,
-        example: infoBabilonMExample,
-        information: infoBabilonM
+        title: "Tcell",
+        image: tcellLogo,
+        example: tcellExample,
+        provider: internBankProvider,
+        adress: internBankProviderAdress
       },
       {
         category: "cellular",
         title: "Точик Мобайл",
         image: tojikMobileLogo,
-        information: ""
-      },
-      {
-        category: "social",
-        title: "viber",
-        image: viberLogo,
-        information: ""
-      },
-      {
-        category: "charity",
-        title: "Дилхои кушода",
-        image: dilhoikushodaLogo,
-        information: ""
-      },
-      {
-        category: "charity",
-        title: "Фонди Рушди Точикистон",
-        image: fondrushdiLogo,
-        information: ""
-      },
-      {
-        category: "betting",
-        title: "Рахш",
-        image: tojbetLogo,
-        information: ""
-      },
-      {
-        category: "betting",
-        title: "1XBET",
-        image: onexBet,
-        information: ""
-      },
-      {
-        category: "internet",
-        title: "BABILON-T",
-        image: babilonTLogo,
-        information: ""
+        example: tojikMobileExample,
+        provider: tojikMobileProvider,
+        adress: tojikMobileProviderAdress
       },
       {
         category: "telephoniya",
         title: "BABILON-T NGN",
         image: babilonTLogo,
-        information: ""
+        example: nineExample,
+        provider: fmfbProvider,
+        adress: fmfbProviderAdress
       },
       {
         category: "telephoniya",
-        title: "TTL",
+        title: "Телеком Технолоджи",
         image: ttlLogo,
-        information: ""
+        example: ttlExample,
+        provider: ttlProvider,
+        adress: ttlProviderAdress
       },
       {
         category: "telephoniya",
         title: "INTERCOM",
         image: intercomLogo,
-        information: ""
+        example: intercomExample,
+        provider: intercomProvider,
+        adress: intercomProviderAdress
       },
       {
         category: "telephoniya",
         title: "EASTERA",
         image: easteraLogo,
-        information: ""
+        example: easteraExample,
+        provider: fmfbProvider,
+        adress: fmfbProviderAdress
       },
+      // {
+      //   category: "telephoniya",
+      //   title: "Точик Мобайл",
+      //   image: tojikMobileLogo,
+      //   information: ""
+      // },
       {
-        category: "telephoniya",
-        title: "Точик Мобайл",
-        image: tojikMobileLogo,
-        information: ""
+        category: "internet",
+        title: "Babilon-T Internet",
+        image: babilonTLogo,
+        example: babilonTExample,
+        provider: fmfbProvider,
+        adress: fmfbProviderAdress
       },
       {
         category: "internet",
-        title: "EASTERA",
+        title: "Eastera Internet",
         image: easteraLogo,
-        information: ""
+        example: easteraInternet,
+        provider: fmfbProvider,
+        adress: fmfbProviderAdress
+      },
+      {
+        category: "internet",
+        title: "TojNet",
+        image: tojnetLogo,
+        example: "xxxxx ",
+        provider: "",
+        adress: ""
+      },
+      {
+        category: "internet",
+        title: "Телеком Технолоджи Internet",
+        image: ttlLogo,
+        example: "xxxxxx",
+        provider: ttlProvider,
+        adress: ttlProviderAdress
+      },
+      {
+        category: "other",
+        title: "ISM.tj",
+        image: ismtjLogo,
+        example: "xxxxx ",
+        provider: ismtjProvider,
+        adress: ismtjProviderAdress
+      },
+      {
+        category: "social",
+        title: "Somon.tj",
+        image: somontjLogo,
+        example: somontjExample,
+        provider: "",
+        adress: ""
+      },
+      {
+        category: "social",
+        title: "Viber",
+        image: viberLogo,
+        example: viberExample,
+        provider: pardokhttjProvider,
+        adress: pardokhttjProviderAdress
+      },
+      {
+        category: "social",
+        title: "Skype",
+        image: skypeLogo,
+        example: twentyfourExample,
+        provider: pardokhttjProvider,
+        adress: pardokhttjProviderAdress
+      },
+      {
+        category: "social",
+        title: "ВКонтакте",
+        image: vkLogo,
+        example: twentyfourExample,
+        provider: fmfbProvider,
+        adress: fmfbProviderAdress
+      },
+      {
+        category: "social",
+        title: "odnoklassniki.ru",
+        image: okLogo,
+        example: twentyfourExample,
+        provider: fmfbProvider,
+        adress: fmfbProviderAdress
+      },
+      {
+        category: "social",
+        title: "Instashop",
+        image: instashoptjLogo,
+        example: nineExample,
+        provider: fmfbProvider,
+        adress: fmfbProviderAdress
+      },
+      {
+        category: "charity",
+        title: "Фонди Рушди Точикистон",
+        image: fondrushdiLogo,
+        example: nineExample,
+        provider: fondrushdiProvider,
+        adress: fondrushdiProviderAdress
+      },
+      {
+        category: "charity",
+        title: "Добрососедство",
+        image: dobrososedstvoLogo,
+        example: nineExample,
+        provider: dobrososedstvoProvider,
+        adress: dobrososedstvoProviderAdress
+      },
+      {
+        category: "charity",
+        title: "Дилхои кушода",
+        image: dilhoikushodaLogo,
+        example: nineExample,
+        provider: dilhoikushodaProvider,
+        adress: dilhoikushodaProviderAdress
+      },
+
+      {
+        category: "betting",
+        title: "1XBET",
+        image: onexBet,
+        example: nineExample,
+        provider: fmfbProvider,
+        adress: fmfbProviderAdress
+      },
+      {
+        category: "betting",
+        title: "Ирсол",
+        image: tennisiLogo,
+        example: nineExample,
+        provider: irsolProvider,
+        adress: irsolProviderAdress
       },
       {
         category: "jkh",
@@ -160,6 +328,32 @@ export default class ListCards extends React.Component {
         image: alifDepositLogo,
         information: ""
       },
+
+      {
+        category: "wallets",
+        title: "QIWI Кошелек",
+        image: qiwiLogo,
+        example: qiwiExample,
+        provider: fmfbProvider,
+        adress: fmfbProviderAdress
+      },
+      {
+        category: "wallets",
+        title: "WebMoney Z",
+        image: wmzLogo,
+        example: wmzExample,
+        provider: fmfbProvider,
+        adress: fmfbProviderAdress
+      },
+      {
+        category: "wallets",
+        title: "WebMoney R",
+        image: wmrLogo,
+        example: wmrExample,
+        provider: fmfbProvider,
+        adress: fmfbProviderAdress
+      },
+
       {
         category: "wallets",
         title: "Алиф mobi",
@@ -168,39 +362,35 @@ export default class ListCards extends React.Component {
       },
       {
         category: "wallets",
-        title: "moneta ru",
+        title: "Moneta.ru",
         image: monetaruLogo,
-        information: ""
+        example: "xxxxxxxx",
+        provider: fmfbProvider,
+        adress: fmfbProviderAdress
       },
       {
         category: "wallets",
-        title: "QIWI кошелек",
-        image: qiwiLogo,
-        information: ""
-      },
-      {
-        category: "wallets",
-        title: "WebMoney R",
-        image: wmrLogo,
-        information: ""
-      },
-      {
-        category: "wallets",
-        title: "WebMoney Z",
-        image: wmzLogo,
-        information: ""
-      },
-      {
-        category: "wallets",
-        title: "Яндекс Деньги",
+        title: "Yandex Деньги",
         image: yandexMoneyLogo,
-        information: ""
+        example: twelveExample,
+        provider: fmfbProvider,
+        adress: fmfbProviderAdress
+      },
+      {
+        category: "wallets",
+        title: "Элсом",
+        image: elsomLogo,
+        example: elsomExample,
+        provider: fmfbProvider,
+        adress: fmfbProviderAdress
       },
       {
         category: "jkh",
         title: "Барки Точик",
         image: barqiTojikLogo,
-        information: ""
+        example: wmrExample,
+        provider: fmfbProvider,
+        adress: fmfbProviderAdress
       },
       {
         category: "transport",
@@ -219,12 +409,6 @@ export default class ListCards extends React.Component {
         title: "БДА обуна 100 руза",
         image: bda100Logo,
         information: ""
-      },
-      {
-        category: "charity",
-        title: "Добрососедство",
-        image: dobrososedstvoLogo,
-        information: ""
       }
     ];
 
@@ -240,7 +424,9 @@ export default class ListCards extends React.Component {
                 category={infoCard.category}
                 image={infoCard.image}
                 title={infoCard.title}
-                // example={infoCard.example}
+                example={infoCard.example}
+                provider={infoCard.provider}
+                adress={infoCard.adress}
                 information={infoCard.information}
                 // onSelect={this.onSelect}
               />
