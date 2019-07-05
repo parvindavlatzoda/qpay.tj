@@ -32,7 +32,7 @@ export default class Footer extends React.Component {
           © 2018, ҶДММ “Пардохти Фаврӣ”
         </copy>
         <address style={{ gridColumn: "1 / 13", justifySelf: "end" }}>
-          Таджикистан, г. Душанбе, просп. Исмоила Сомони, д. 8
+          Таджикистан, г. Душанбе, просп. Исмоила Сомони, ул. М. Турсунзода 45
         </address>
       </footer>
     );

@@ -57,18 +57,19 @@
 .example {
   font-size: 1.3em;
   margin: 0 1.6rem;
-  color: crimson;
+  color: rgb(18, 18, 99);
   font-weight: 700;
 }
 .card-title-1 {
   font-size: 1em;
-  margin: 1.6rem;
+  margin: 0.5em 1.6rem;
 
-  /* font-weight: 700; */
+  font-weight: 700;
 }
 .card-provider {
   font-size: 1em;
-  margin: 1.6rem;
+  margin: 0.5em 1.6rem 1.6em;
+  /* margin: 1.6rem; */
 }
 .info-text {
   overflow: hidden;
