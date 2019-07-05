@@ -16,7 +16,7 @@ export default class Charity extends React.Component {
         <div
         // class="main-div"
         >
-          <div class="background-hands" style={{ margin: "1em" }}>
+          <div class="background-hands" style={{ margin: "1em 0" }}>
             <div class="cover">
               <h1 class="header-charity">
                 Люди готовы собирать <span class="nadobro">#надобро</span>
