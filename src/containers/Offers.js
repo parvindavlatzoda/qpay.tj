@@ -1,6 +1,7 @@
 import React from "react";
 import "./../styles/offers.css";
 import offerTj from "./../images/offer_tj.pdf";
+import nizomiPardokht from "./../images/nizomi_pardokht.PDF";
 
 export default class Offers extends React.Component {
   render() {
@@ -15,6 +16,11 @@ export default class Offers extends React.Component {
                 <div class="link-offer">
                   <a class="link-self-11" href={offerTj} target="_blank">
                     Оферта для использования терминала
+                  </a>
+                </div>
+                <div class="link-offer">
+                  <a class="link-self-11" href={nizomiPardokht} target="_blank">
+                    Коидахои низоми пардохт
                   </a>
                 </div>
                 {/* 
