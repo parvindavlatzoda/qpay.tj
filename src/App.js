@@ -9,7 +9,7 @@ import Charity from "./containers/Charity";
 import Offers from "./containers/Offers";
 import Job from "./containers/Job";
 import Faq from "./containers/FAQ";
-import AccordionSection from "./containers/AccordionSection";
+import Map from "./containers/Map";
 
 class App extends Component {
   render() {
@@ -22,6 +22,8 @@ class App extends Component {
         <Route exact path="/offers" component={Offers} />
         <Route exact path="/job" component={Job} />
         <Route exact path="/faq" component={Faq} />
+        <Route exact path="/map" component={Map} />
+
         {/* <Route exact path="/accordionsection" component={AccordionSection} /> */}
       </Layout>
     );

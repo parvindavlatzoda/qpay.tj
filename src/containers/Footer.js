@@ -7,7 +7,9 @@ export default class Footer extends React.Component {
     return (
       <footer className="footer">
         <ul style={{ gridColumn: "1 / 10" }}>
-          <li>Карта терминалов</li>
+          <li>
+            <Link to="/map">Карта терминалов</Link>
+          </li>
           <li>Безопасность</li>
           <li>Помощь</li>
           <li>
