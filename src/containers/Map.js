@@ -66,7 +66,16 @@ const clusterMarker = (coordinates, pointCount) => (
   </Marker>
 );
 export default class Map extends React.Component {
+  state = {
+    selectedTerminal: ""
+  };
+  onClickMarker = number => {
+    console.log(number);
+    this.setState({ selectedTerminal: number });
+    console.log(this.state.selectedTerminal);
+  };
   render() {
+    const { selectedTerminal } = this.state;
     return (
       <div>
         <div class="header-back" />
@@ -92,6 +101,7 @@ export default class Map extends React.Component {
                       offset={{ bottom: [4, 12] }}
                       coordinates={[terminal.lng, terminal.lat]}
                       anchor="bottom"
+                      onClick={() => this.onClickMarker(terminal.number)}
                     >
                       {/* {map_pin} */}
                       <svg
@@ -110,6 +120,9 @@ export default class Map extends React.Component {
                         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                         <circle cx="12" cy="10" r="3"></circle>
                       </svg>
+                      {terminal.number === selectedTerminal && (
+                        <div>{selectedTerminal}</div>
+                      )}
                     </Marker>
                   )
               )}
