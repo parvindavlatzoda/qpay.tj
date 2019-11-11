@@ -17,7 +17,10 @@ const accessToken =
   "pk.eyJ1IjoicXBheSIsImEiOiJjazJsbzEzZjUwOGV0M2NxdTRvcnV2NDNlIn0.AKe5EkkdFbQTdNV4oxZ_dg";
 const Mapbox = ReactMapboxGl({ accessToken });
 const clusterMarker = (coordinates, pointCount) => (
-  <Marker coordinates={coordinates}>
+  <Marker
+    coordinates={coordinates}
+    // onClick={() => this.onClickMarker(terminal)}
+  >
     <span
     // style={{ background: "orange", borderRadius: "50%", padding: "10px" }}
     >
@@ -70,31 +73,49 @@ const clusterMarker = (coordinates, pointCount) => (
 );
 export default class Map extends React.Component {
   state = {
-    selectedTerminal: ""
+    selectedTerminal: "",
+    zoom: 12,
+    center: [68.7848, 38.5741]
   };
-  onClickMarker = terminal => {
+  onMarkerClick = terminal => {
     console.log(terminal);
     this.setState({ selectedTerminal: terminal });
     console.log(this.state.selectedTerminal);
+    this.setState({ center: [terminal.lng, terminal.lat] });
+    this.setState({ zoom: 14 });
+  };
+  OnClose = () => {
+    this.setState({ selectedTerminal: null });
   };
   render() {
-    const { selectedTerminal } = this.state;
+    const { selectedTerminal, zoom, center } = this.state;
     return (
       <div>
         <div class="header-back" />
         <div class="main-div">
           <Mapbox
             // eslint-disable-next-line
-            center={[68.784848, 38.574192]}
-            zoom={[12]}
+            // center={[68.784848, 38.574192]}
+            center={center}
+            // center={[70.376253, 39.027009]}
+
+            zoom={[zoom]}
+            minZoom={[12]}
+            maxZoom={[14]}
             style="mapbox://styles/mapbox/outdoors-v10?optimize=true"
             containerStyle={{
               height: "100vh",
               width: "100%"
             }}
+            // flyToOptions={{ speed: "0.8s" }}
           >
             <Layer type="symbol" />
-            <Cluster radius={30} ClusterMarkerFactory={clusterMarker}>
+            <Cluster
+              radius={30}
+              ClusterMarkerFactory={clusterMarker}
+              zoomOnClick="true"
+              // zoomOnClickPadding={100}
+            >
               {terminals.map(
                 terminal =>
                   terminal.number &&
@@ -104,7 +125,7 @@ export default class Map extends React.Component {
                       offset={{ bottom: [4, 12] }}
                       coordinates={[terminal.lng, terminal.lat]}
                       anchor="bottom"
-                      onClick={() => this.onClickMarker(terminal)}
+                      onClick={() => this.onMarkerClick(terminal)}
                     >
                       {/* {map_pin} */}
                       <svg
@@ -139,6 +160,7 @@ export default class Map extends React.Component {
                 }}
               >
                 <button
+                  onClick={this.OnClose}
                   style={{
                     marginLeft: "80%",
                     border: "none",
