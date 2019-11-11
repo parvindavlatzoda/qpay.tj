@@ -82,7 +82,7 @@ export default class Map extends React.Component {
     this.setState({ selectedTerminal: terminal });
     console.log(this.state.selectedTerminal);
     this.setState({ center: [terminal.lng, terminal.lat] });
-    this.setState({ zoom: 14 });
+    // this.setState({ zoom: 14 });
   };
   OnClose = () => {
     this.setState({ selectedTerminal: null });
@@ -100,8 +100,8 @@ export default class Map extends React.Component {
             // center={[70.376253, 39.027009]}
 
             zoom={[zoom]}
-            minZoom={[12]}
-            maxZoom={[14]}
+            // minZoom={[12]}
+            maxZoom={[12]}
             style="mapbox://styles/mapbox/outdoors-v10?optimize=true"
             containerStyle={{
               height: "100vh",
