@@ -133,11 +133,21 @@ export default class Map extends React.Component {
                 anchor="bottom-left"
                 coordinates={[selectedTerminal.lng, selectedTerminal.lat]}
                 offset={{
-                  "bottom-left": [12, -38]
-                  // " bottom": [0, -38],
-                  // "bottom-right": [-12, -38]
+                  "bottom-left": [12, -38],
+                  " bottom": [0, -38],
+                  "bottom-right": [-12, -38]
                 }}
               >
+                <button
+                  style={{
+                    marginLeft: "80%",
+                    border: "none",
+                    background: "white",
+                    color: "gray"
+                  }}
+                >
+                  x
+                </button>
                 <div>
                   Номер терминала:
                   <p>{selectedTerminal.number}</p>
