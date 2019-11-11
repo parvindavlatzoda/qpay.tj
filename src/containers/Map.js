@@ -4,8 +4,11 @@ import ReactMapboxGl, {
   ZoomControl,
   RotationControl,
   Marker,
+  Feature,
+  Popup,
   Cluster
 } from "react-mapbox-gl";
+
 // import "./../terminals.json";
 import terminals from "./../terminals.json";
 // import map_pin from "./../images/map_pin.svg";
@@ -69,9 +72,9 @@ export default class Map extends React.Component {
   state = {
     selectedTerminal: ""
   };
-  onClickMarker = number => {
-    console.log(number);
-    this.setState({ selectedTerminal: number });
+  onClickMarker = terminal => {
+    console.log(terminal);
+    this.setState({ selectedTerminal: terminal });
     console.log(this.state.selectedTerminal);
   };
   render() {
@@ -101,7 +104,7 @@ export default class Map extends React.Component {
                       offset={{ bottom: [4, 12] }}
                       coordinates={[terminal.lng, terminal.lat]}
                       anchor="bottom"
-                      onClick={() => this.onClickMarker(terminal.number)}
+                      onClick={() => this.onClickMarker(terminal)}
                     >
                       {/* {map_pin} */}
                       <svg
@@ -120,13 +123,28 @@ export default class Map extends React.Component {
                         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                         <circle cx="12" cy="10" r="3"></circle>
                       </svg>
-                      {terminal.number === selectedTerminal && (
-                        <div>{selectedTerminal}</div>
-                      )}
                     </Marker>
                   )
               )}
             </Cluster>
+            {selectedTerminal && (
+              <Popup
+                className={"popup-custom"}
+                anchor="bottom-left"
+                coordinates={[selectedTerminal.lng, selectedTerminal.lat]}
+                offset={{
+                  "bottom-left": [12, -38]
+                  // " bottom": [0, -38],
+                  // "bottom-right": [-12, -38]
+                }}
+              >
+                <div>
+                  Номер терминала:
+                  <p>{selectedTerminal.number}</p>
+                </div>
+              </Popup>
+            )}
+
             <RotationControl />
             <ZoomControl />
           </Mapbox>
